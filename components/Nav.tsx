@@ -9,8 +9,8 @@ export default function Nav() {
         <ul className="flex items-center justify-between">
           <li>
             <a
-              className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
+              href="https://twitter.com/knnel_"
               target="_blank"
               rel="noopener noreferrer"
             >
