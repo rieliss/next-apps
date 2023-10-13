@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import MenuBar from "@/components/menu";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Button variant={"secondary"}>Learn more</Button>
         <Button>Enroll Now</Button>
       </div>
+      <MenuBar />
       <Footer />
     </main>
   );
