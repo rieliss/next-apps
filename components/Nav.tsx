@@ -1,12 +1,6 @@
 "use client";
 import Image from "next/image";
 import { ModeToggle } from "./ui/toggle-mode";
-import { Button } from "./ui/button";
-import {
-  RocketIcon,
-  ExclamationTriangleIcon,
-  InstagramLogoIcon,
-} from "@radix-ui/react-icons";
 
 export default function Nav() {
   return (
