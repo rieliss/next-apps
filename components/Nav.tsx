@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { ModeToggle } from "./ui/toggle-mode";
+import { SparklesIcon } from "@heroicons/react/24/outline";
 
 export default function Nav() {
   return (
@@ -8,21 +9,9 @@ export default function Nav() {
       <nav>
         <ul className="flex items-center justify-between">
           <li>
-            <a
-              className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" target="_self" rel="noopener noreferrer">
               {" "}
-              <Image
-                src="/logo.svg"
-                alt="Logo"
-                className="dark:invert"
-                width={50}
-                height={24}
-                priority
-              />
+              <SparklesIcon className="h-8 w-8 text-black" />
             </a>
           </li>
           <li>

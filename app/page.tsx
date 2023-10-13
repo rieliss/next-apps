@@ -6,9 +6,9 @@ import { RocketIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
-    <main className="p-4">
+    <main className="p-6">
       <Nav />
-      <section className="py-8 flex flex-col items-center text-center gap-8">
+      <section className="py-8 flex flex-col items-center text-center gap-ภ">
         <h1 className="text-2xl font-bold">
           <RocketIcon />
           Singapore Travel Guide
