@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { ModeToggle } from "./ui/toggle-mode";
-import { SparklesIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 export default function Nav() {
   return (
@@ -11,7 +11,7 @@ export default function Nav() {
           <li>
             <a href="/" target="_self" rel="noopener noreferrer">
               {" "}
-              <SparklesIcon className="h-8 w-8 text-black" />
+              <SparklesIcon className="h-8 w-8 text-dark:invert" />
             </a>
           </li>
           <li>
