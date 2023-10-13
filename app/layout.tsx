@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Onest, IBM_Plex_Sans_Thai } from "next/font/google";
+import { IBM_Plex_Sans_Thai } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Onest({ subsets: ["latin"] });
 const sans = IBM_Plex_Sans_Thai({
   weight: ["400"],
   subsets: ["latin"],
@@ -21,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(inter.className, sans.className)}>
+      <body className={sans.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

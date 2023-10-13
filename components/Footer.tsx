@@ -14,13 +14,13 @@ export default function Footer() {
       <nav>
         <ul className="gap-6 py-6 flex items-center justify-between">
           <li>
-            <LinkedInLogoIcon />
+            <LinkedInLogoIcon href="/" />
           </li>
           <li>
-            <InstagramLogoIcon />
+            <InstagramLogoIcon href="https://instagram.com/fangliss" />
           </li>
           <li>
-            <TwitterLogoIcon />
+            <TwitterLogoIcon href="https://twitter.com/knnel_" />
           </li>
         </ul>
       </nav>

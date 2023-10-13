@@ -1,13 +1,59 @@
 "use client";
+import Back from "@/components/back-page";
+import { AccordionDemo } from "@/components/todo";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 const FirstDayPage = () => {
   const router = useRouter();
   return (
-    <section className="px-5 py-10 sm:px-6 lg:px-16 lg:py:24">
-      First Day
-    </section>
+    <main className="p-4">
+      <Back />
+      <section className="p-4 mt-4 flex flex-col items-center text-center gap-2">
+        <AccordionDemo
+          NameList="Check in at Airports"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+        <AccordionDemo
+          NameList="Goto Santosa"
+          Topic="Goto Santosa"
+          Description="By bus"
+          Time="12:00 pm"
+        />
+      </section>
+    </main>
   );
 };
 

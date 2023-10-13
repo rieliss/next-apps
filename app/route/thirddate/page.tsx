@@ -1,13 +1,17 @@
 "use client";
+import Back from "@/components/back-page";
+import { AccordionDemo } from "@/components/todo";
+
 import { useRouter } from "next/navigation";
 import React from "react";
 
 const ThirdDatePage = () => {
   const router = useRouter();
   return (
-    <section className="px-5 py-10 sm:px-6 lg:px-16 lg:py:24">
-      Third Day
-    </section>
+    <main className="p-4">
+      <Back />
+      <section className="py-2 flex flex-col items-center text-center gap-8"></section>
+    </main>
   );
 };
 
