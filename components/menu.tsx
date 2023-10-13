@@ -10,8 +10,8 @@ export default function MenuBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>Route </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <h2 className={`mb-3 font-semibold`}>Route </h2>
+          <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
             Various information about traveling and things to prepare.
           </p>
         </a>
@@ -22,8 +22,8 @@ export default function MenuBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>Location </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <h2 className={`mb-3 font-semibold`}>Location </h2>
+          <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
             Various places to go and routes, including transportation!&nbsp;
           </p>
         </a>
@@ -34,8 +34,8 @@ export default function MenuBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>Applications</h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <h2 className={`mb-3 font-semibold`}>Applications</h2>
+          <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
             Applications that you should have when going to Singapore.
           </p>
         </a>
@@ -46,8 +46,8 @@ export default function MenuBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>Other </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <h2 className={`mb-3 font-semibold`}>Other </h2>
+          <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
             Additional information you should know.
           </p>
         </a>
