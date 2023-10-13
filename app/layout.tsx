@@ -1,9 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Onest, IBM_Plex_Sans_Thai, IBM_Plex_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Onest({ subsets: ["latin"] });
+const sans = IBM_Plex_Sans_Thai({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const mono = IBM_Plex_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Tum ngai D",
@@ -17,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={(inter.className, sans.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

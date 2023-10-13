@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
-import { ModeToggle } from "./ui/toggle-mode";
+import { ModeToggle } from "@/components/ui/toggle-mode";
+import { Button } from "@/components/ui/button";
 
-export default function Nav() {
+export default function HomePage() {
   return (
     <header>
       <nav>
