@@ -1,15 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Onest, IBM_Plex_Sans_Thai, IBM_Plex_Mono } from "next/font/google";
+import { Onest, IBM_Plex_Sans_Thai } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Onest({ subsets: ["latin"] });
 const sans = IBM_Plex_Sans_Thai({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-const mono = IBM_Plex_Mono({
   weight: ["400"],
   subsets: ["latin"],
 });
