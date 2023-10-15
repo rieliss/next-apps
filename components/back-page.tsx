@@ -9,13 +9,13 @@ export default function Back() {
       <nav>
         <ul className="flex items-center justify-between">
           <li>
+            <ModeToggle />
+          </li>
+          <li>
             <a href="/route" target="_self" rel="noopener noreferrer">
               {" "}
               <ArrowLeftCircleIcon className="h-8 w-8 text-dark:invert" />
             </a>
-          </li>
-          <li>
-            <ModeToggle />
           </li>
         </ul>
       </nav>

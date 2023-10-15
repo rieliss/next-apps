@@ -9,13 +9,13 @@ export default function Nav() {
       <nav>
         <ul className="flex items-center justify-between">
           <li>
+            <ModeToggle />
+          </li>
+          <li>
             <a href="/" target="_self" rel="noopener noreferrer">
               {" "}
               <SparklesIcon className="h-8 w-8 text-dark:invert" />
             </a>
-          </li>
-          <li>
-            <ModeToggle />
           </li>
         </ul>
       </nav>
