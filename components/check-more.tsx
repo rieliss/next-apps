@@ -1,39 +1,28 @@
 "use client";
 import { Checkbox } from "@/components/ui/checkbox";
+import { UpdateStatus } from "@/function/details";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 type Props = {
-  Topic: string;
-  Description: string;
-  Link: string;
+  Data: any;
 };
 
-const getTopics = async () => {
-  try {
-    const res = await fetch("http://localhost:3000/api/details", {
-      cache: "no-store",
-    });
+export function CheckMorePage({ Data }: Props) {
+  // console.log(Data);
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch topics");
-    }
-
-    return res.json();
-  } catch (error) {
-    console.log("Error loading topics: ", error);
-  }
-};
-
-export async function CheckMorePage() {
-  const { topics } = await getTopics();
   return (
-    <>
-      {Array.isArray(topics) ? (
-        topics.map((data: any, index: number) => (
+    <div>
+      {Data ? (
+        Data.map((data: any, index: number) => (
           <div className="items-top flex space-x-4" key={index}>
-            <Checkbox />
+            <Checkbox
+              onClick={async () => {
+                await UpdateStatus(data.id);
+              }}
+              checked={data.status}
+            />
             <div className="grid gap-1.5 leading-none">
               <span className="text-sm font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                 {data.title}
@@ -48,6 +37,6 @@ export async function CheckMorePage() {
       ) : (
         <p>Failed to fetch topics.</p>
       )}
-    </>
+    </div>
   );
 }

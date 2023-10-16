@@ -1,18 +1,21 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = env("MONGO_URL")
 }
 
 model Post {
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  topic     String    @unique
-  descript    String
-  status  Boolean
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  /// Field referred in an index, but found no data to define the type.
+  topic Json?  @unique
+}
+
+model details {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  title       String
+  status Boolean @default(false)
 }

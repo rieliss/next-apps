@@ -1,18 +1,21 @@
-"use client";
-
 import Nav from "@/components/Nav";
 import { CheckMorePage } from "@/components/check-more";
 import { DialogDemo } from "@/components/popup";
 import React, { useEffect, useState } from "react";
+import { PrismaClient } from "@prisma/client";
+import { type } from "os";
 
-export default function MorePage() {
+const prisma = new PrismaClient();
+
+export default async function MorePage() {
+  const GetData = await prisma.details.findMany();
   return (
     <main className="p-4">
       <Nav />
       <section className="py-8 flex flex-col items-center text-center">
         <DialogDemo />
         <div className="grid text-left gap-8 lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left p-4">
-          <CheckMorePage />
+          <CheckMorePage Data={GetData} />
         </div>
       </section>
     </main>
