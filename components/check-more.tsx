@@ -13,7 +13,7 @@ export function CheckMorePage({ Data }: Props) {
   // console.log(Data);
 
   return (
-    <div>
+    <div className="grid gap-5 leading-none">
       {Data ? (
         Data.map((data: any, index: number) => (
           <div className="items-top flex space-x-4" key={index}>
