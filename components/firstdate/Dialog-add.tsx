@@ -54,7 +54,7 @@ export function DialogAddDatetime() {
         <DialogTrigger asChild>
           <Button variant="secondary">+</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] max-w-[300px]">
           <DialogHeader>
             <DialogTitle>Add</DialogTitle>
             <DialogDescription>
@@ -64,7 +64,7 @@ export function DialogAddDatetime() {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleSubmit)}
-              className="w-2/3 space-y-6"
+              className="w-3/3 space-y-6"
             >
               <FormField
                 control={form.control}
@@ -84,7 +84,7 @@ export function DialogAddDatetime() {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleSubmit)}
-              className="w-2/3 space-y-6"
+              className="w-3/3 space-y-6"
             >
               <FormField
                 control={form.control}
@@ -104,7 +104,7 @@ export function DialogAddDatetime() {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleSubmit)}
-              className="w-2/3 space-y-6"
+              className="w-3/3 space-y-6"
             >
               <FormField
                 control={form.control}

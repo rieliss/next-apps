@@ -12,9 +12,13 @@ export default async function FirstDayPage() {
   return (
     <main className="p-4">
       <Back />
-      <DialogAddDatetime />
       <section className="p-4 mt-4 flex flex-col text-center gap-2">
         <AccordionDemo Data={GetData} />
+        <footer className="w-full h-24 fixed left-0 bottom-0 flex justify-end items-center p-8 text-2xl">
+          <nav>
+            <DialogAddDatetime />
+          </nav>
+        </footer>
       </section>
     </main>
   );
