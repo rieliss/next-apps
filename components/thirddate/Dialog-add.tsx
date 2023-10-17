@@ -24,29 +24,32 @@ import {
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
-import { CreateMore } from "@/function/details";
+import {
+  CreateFirst,
+  CreateMore,
+  CreateSecond,
+  CreateThird,
+} from "@/function/details";
 import { DialogClose } from "@radix-ui/react-dialog";
 
 const formSchema = z.object({
-  title: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-  description: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
+  title: z.string(),
+  description: z.string(),
+  time: z.string(),
 });
 
-export function DialogDemo() {
+export function DialogAddDatetime() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       title: "",
       description: "",
+      time: "",
     },
   });
 
   async function handleSubmit(data: z.infer<typeof formSchema>) {
-    await CreateMore(data);
+    await CreateThird(data);
     toast.success("Successfully created!");
   }
 
@@ -60,8 +63,7 @@ export function DialogDemo() {
           <DialogHeader>
             <DialogTitle>Add</DialogTitle>
             <DialogDescription>
-              Make changes to your trip details here. Click save when you are
-              done.
+              Make changes to your route here. Click save when you are done.
             </DialogDescription>
           </DialogHeader>
           <Form {...form}>
@@ -102,9 +104,29 @@ export function DialogDemo() {
                   </FormItem>
                 )}
               />
+            </form>
+          </Form>
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(handleSubmit)}
+              className="w-3/3 space-y-6"
+            >
+              <FormField
+                control={form.control}
+                name="time"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Time</FormLabel>
+                    <FormControl>
+                      <Input placeholder="" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <DialogFooter>
                 <DialogClose asChild>
-                  <Button type="submit">Save changes</Button>
+                  <Button type="submit">submit</Button>
                 </DialogClose>
               </DialogFooter>
             </form>

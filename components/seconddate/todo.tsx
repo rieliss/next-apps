@@ -5,15 +5,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckboxWithText } from "@/components/check-list";
-import { UpdateStatusFirst } from "@/function/details";
+import { UpdateStatusSecond } from "@/function/details";
 import { Checkbox } from "@/components/ui/checkbox";
 
 type Props = {
   Data: any;
 };
 
-export function AccordionDemo({ Data }: Props) {
+export function AccordionSecond({ Data }: Props) {
   return (
     <div>
       {Data ? (
@@ -29,11 +28,11 @@ export function AccordionDemo({ Data }: Props) {
                     <div className="flex gap-4 items-center leading-none">
                       <Checkbox
                         onClick={async () => {
-                          await UpdateStatusFirst(data.id);
+                          await UpdateStatusSecond(data.id);
                         }}
                         checked={data.status}
                       />
-                      <span className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                      <span className="text-sm text-left font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                         {data.description}
                       </span>
                     </div>

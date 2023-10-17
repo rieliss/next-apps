@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("MONGO_URL")
+  url      = env("DATABASE_URL")
 }
 
 model details {
@@ -36,4 +36,18 @@ model thirddate {
   status      Boolean @default(false)
   title       String
   time String
+}
+
+model Application {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  apps       String
+  link String
+}
+
+model Location {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  apps       String
+  link String
 }

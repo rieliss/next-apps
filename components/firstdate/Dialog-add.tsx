@@ -58,7 +58,7 @@ export function DialogAddDatetime() {
           <DialogHeader>
             <DialogTitle>Add</DialogTitle>
             <DialogDescription>
-              Make changes to your profile here. Click save when you are done.
+              Make changes to your route here. Click save when you are done.
             </DialogDescription>
           </DialogHeader>
           <Form {...form}>

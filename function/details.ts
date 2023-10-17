@@ -103,3 +103,103 @@ export async function UpdateStatusFirst(e: any) {
     console.log(error);
   }
 }
+
+export async function CreateSecond(e: any) {
+  try {
+    await prisma.seconddate.create({
+      data: {
+        title: e.title,
+        description: e.description,
+        time: e.time,
+      },
+    });
+
+    revalidatePath("/route/seconddate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}
+
+export async function UpdateStatusSecond(e: any) {
+  try {
+    const Check = await prisma.seconddate.findUnique({
+      where: {
+        id: e,
+      },
+    });
+
+    if (Check?.status) {
+      await prisma.seconddate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: false,
+        },
+      });
+    } else {
+      await prisma.seconddate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: true,
+        },
+      });
+    }
+
+    revalidatePath("/route/seconddate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}
+
+export async function CreateThird(e: any) {
+  try {
+    await prisma.thirddate.create({
+      data: {
+        title: e.title,
+        description: e.description,
+        time: e.time,
+      },
+    });
+
+    revalidatePath("/route/thirddate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}
+
+export async function UpdateStatusThird(e: any) {
+  try {
+    const Check = await prisma.thirddate.findUnique({
+      where: {
+        id: e,
+      },
+    });
+
+    if (Check?.status) {
+      await prisma.thirddate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: false,
+        },
+      });
+    } else {
+      await prisma.thirddate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: true,
+        },
+      });
+    }
+
+    revalidatePath("/route/thirddate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}

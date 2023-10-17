@@ -20,10 +20,10 @@ export function CheckMorePage({ Data }: Props) {
               checked={data.status}
             />
             <div className="grid gap-1.5 leading-none">
-              <span className="text-sm font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+              <span className="text-sm text-left font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                 {data.title}
               </span>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-left text-muted-foreground">
                 {data.description}
               </p>
               {/* <p className="text-sm text-muted-foreground">{Link}</p> */}
