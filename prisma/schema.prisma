@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("MONGO_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
-model details {
-  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+model More {
+  id          Int    @id @default(autoincrement())
   description String
   status      Boolean @default(false)
   title       String

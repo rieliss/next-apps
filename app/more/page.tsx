@@ -8,7 +8,7 @@ import { type } from "os";
 const prisma = new PrismaClient();
 
 export default async function MorePage() {
-  const GetData = await prisma.details.findMany();
+  const GetData = await prisma.more.findMany();
   return (
     <main className="p-4">
       <Nav />

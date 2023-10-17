@@ -5,9 +5,9 @@ import { revalidatePath } from "next/cache";
 
 const prisma = new PrismaClient();
 
-export async function CreateDetails(e: any) {
+export async function CreateMore(e: any) {
   try {
-    await prisma.details.create({
+    await prisma.more.create({
       data: {
         title: e.title,
         description: e.description,
@@ -20,16 +20,16 @@ export async function CreateDetails(e: any) {
   }
 }
 
-export async function UpdateStatus(e: string) {
+export async function UpdateStatus(e: any) {
   try {
-    const Check = await prisma.details.findUnique({
+    const Check = await prisma.more.findUnique({
       where: {
         id: e,
       },
     });
 
     if (Check?.status) {
-      await prisma.details.update({
+      await prisma.more.update({
         where: {
           id: e,
         },
@@ -38,7 +38,7 @@ export async function UpdateStatus(e: string) {
         },
       });
     } else {
-      await prisma.details.update({
+      await prisma.more.update({
         where: {
           id: e,
         },

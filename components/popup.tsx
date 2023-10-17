@@ -27,7 +27,7 @@ import {
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
-import { CreateDetails } from "@/function/details";
+import { CreateMore } from "@/function/details";
 import { DialogClose } from "@radix-ui/react-dialog";
 
 const formSchema = z.object({
@@ -49,7 +49,7 @@ export function DialogDemo() {
   });
 
   async function handleSubmit(data: z.infer<typeof formSchema>) {
-    await CreateDetails(data);
+    await CreateMore(data);
     toast.success("Successfully created!");
   }
 
