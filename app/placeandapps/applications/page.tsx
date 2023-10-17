@@ -49,8 +49,6 @@ Check out the latest wait times, access the map of the park, and so much more. I
             Img="/241119747_143802171261190_8626849927253392984_n.jpg"
             Description="The Land Transport Authority (LTA) spearheads land transport developments in Singapore. "
           />
-          <AddApplication Apps="" Link="" Img="" Description="" />
-          <AddApplication Apps="" Link="" Img="" Description="" />
         </div>
       </section>
     </main>

@@ -78,8 +78,8 @@ const TicketsPage = () => {
   return (
     <main className="p-4">
       <Nav />
-      <section className="py-8 flex flex-col items-center text-center gap-8">
-        <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left p-4">
+      <section className="py-2 flex flex-col items-center text-center gap-8">
+        <div className="grid text-center p-2 grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <a
             onClick={DownTick1}
             href="/tickets"

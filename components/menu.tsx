@@ -22,7 +22,7 @@ export default function MenuBar() {
           target="_self"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 font-semibold`}>Places & Applications </h2>
+          <h2 className={`mb-3 font-semibold`}>Details </h2>
           <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
             All places on the trip and all necessary applications.
           </p>
