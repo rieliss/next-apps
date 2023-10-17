@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 type Props = {
   Img: string;
-  Name: string;
+  Apps: string;
   Description: string;
   Link: string;
 };
 
-export default function PlacePage({ Img, Name, Description, Link }: Props) {
+export default function AddApplication({
+  Img,
+  Apps,
+  Description,
+  Link,
+}: Props) {
   return (
     <div className="flex items-center justify-center text-center">
       <a
@@ -25,7 +30,7 @@ export default function PlacePage({ Img, Name, Description, Link }: Props) {
         />
 
         <h2 className={`mt-3 font-semibold text-[12px] text-dark:invert`}>
-          {Name}
+          {Apps}
         </h2>
         <p className={`max-w-[30ch] text-[10px] opacity-50 text-dark:invert`}>
           {Description}

@@ -18,51 +18,17 @@ const LocationPage = () => {
           <PlacePage
             Name="Universal Studios Singapore"
             Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
+            Img="/univer.jpg"
+            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park."
           />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/public/image/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park. "
-          />
+          {/* <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" />
+          <PlacePage Name="" Link="" Img="" Description="" /> */}
         </div>
       </section>
     </main>
