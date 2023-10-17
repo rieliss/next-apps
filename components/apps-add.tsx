@@ -27,6 +27,7 @@ export default function AddApplication({
           width={150}
           height={0}
           alt="Picture of the author"
+          className="rounded-full"
         />
 
         <h2 className={`mt-3 font-semibold text-[12px] text-dark:invert`}>

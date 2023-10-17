@@ -9,10 +9,10 @@ type Props = {
 
 export function CheckMorePage({ Data }: Props) {
   return (
-    <div className="grid gap-5 leading-none">
+    <div className="grid gap-5">
       {Data ? (
         Data.map((data: any, index: number) => (
-          <div className="items-top flex space-x-4" key={index}>
+          <div className="flex items-top space-x-4" key={index}>
             <Checkbox
               onClick={async () => {
                 await UpdateStatus(data.id);

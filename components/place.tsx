@@ -22,6 +22,7 @@ export default function PlacePage({ Img, Name, Description, Link }: Props) {
           width={150}
           height={0}
           alt="Picture of the author"
+          className="rounded"
         />
 
         <h2 className={`mt-3 font-semibold text-[12px] text-dark:invert`}>
