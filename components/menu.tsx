@@ -17,26 +17,26 @@ export default function MenuBar() {
         </a>
 
         <a
-          href="/location"
+          href="/placeandapps"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_self"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 font-semibold`}>Location </h2>
+          <h2 className={`mb-3 font-semibold`}>Places & Applications </h2>
           <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
-            Various places to go and routes, including transportation!&nbsp;
+            All places on the trip and all necessary applications.
           </p>
         </a>
 
         <a
-          href="/applications"
+          href="/tickets"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_self"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 font-semibold`}>Applications</h2>
+          <h2 className={`mb-3 font-semibold`}>Tickets</h2>
           <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
-            Applications that you should have when going to Singapore.
+            Airplane tickets and various documents required for the trip.
           </p>
         </a>
 

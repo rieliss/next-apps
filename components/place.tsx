@@ -13,7 +13,7 @@ export default function PlacePage({ Img, Name, Description, Link }: Props) {
     <div className="flex items-center justify-center text-center">
       <a
         href={Link}
-        className="flex flex-col rounded-lg p-2 h-full items-center group border border-transparent px-4 py-6 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        className="flex flex-col rounded-lg p-2 h-full border-2 border-gray-100 items-center group border-transparent px-4 py-6 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         target="_blank"
         rel="noopener noreferrer"
       >
