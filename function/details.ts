@@ -53,3 +53,53 @@ export async function UpdateStatus(e: any) {
     console.log(error);
   }
 }
+
+export async function CreateFirst(e: any) {
+  try {
+    await prisma.firstdate.create({
+      data: {
+        title: e.title,
+        description: e.description,
+        time: e.time,
+      },
+    });
+
+    revalidatePath("/route/firstdate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}
+
+export async function UpdateStatusFirst(e: any) {
+  try {
+    const Check = await prisma.firstdate.findUnique({
+      where: {
+        id: e,
+      },
+    });
+
+    if (Check?.status) {
+      await prisma.firstdate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: false,
+        },
+      });
+    } else {
+      await prisma.firstdate.update({
+        where: {
+          id: e,
+        },
+        data: {
+          status: true,
+        },
+      });
+    }
+
+    revalidatePath("/route/firstdate");
+  } catch (error: any) {
+    console.log(error);
+  }
+}

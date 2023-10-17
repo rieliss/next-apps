@@ -13,3 +13,27 @@ model details {
   status      Boolean @default(false)
   title       String
 }
+
+model firstdate {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  status      Boolean @default(false)
+  title       String
+  time String
+}
+
+model seconddate {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  status      Boolean @default(false)
+  title       String
+  time String
+}
+
+model thirddate {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  status      Boolean @default(false)
+  title       String
+  time String
+}
