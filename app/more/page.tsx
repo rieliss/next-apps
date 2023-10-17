@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import { CheckMorePage } from "@/components/check-more";
 import { DialogDemo } from "@/components/popup";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
