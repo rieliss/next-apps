@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 
 export async function CreateMore(e: any) {
   try {
-    await prisma.more.create({
+    await prisma.details.create({
       data: {
         title: e.title,
         description: e.description,
@@ -22,14 +22,14 @@ export async function CreateMore(e: any) {
 
 export async function UpdateStatus(e: any) {
   try {
-    const Check = await prisma.more.findUnique({
+    const Check = await prisma.details.findUnique({
       where: {
         id: e,
       },
     });
 
     if (Check?.status) {
-      await prisma.more.update({
+      await prisma.details.update({
         where: {
           id: e,
         },
@@ -38,7 +38,7 @@ export async function UpdateStatus(e: any) {
         },
       });
     } else {
-      await prisma.more.update({
+      await prisma.details.update({
         where: {
           id: e,
         },

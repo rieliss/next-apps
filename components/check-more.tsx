@@ -1,8 +1,6 @@
 "use client";
 import { Checkbox } from "@/components/ui/checkbox";
 import { UpdateStatus } from "@/function/details";
-import axios from "axios";
-import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 type Props = {
@@ -10,8 +8,6 @@ type Props = {
 };
 
 export function CheckMorePage({ Data }: Props) {
-  // console.log(Data);
-
   return (
     <div className="grid gap-5 leading-none">
       {Data ? (
