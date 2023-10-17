@@ -31,6 +31,17 @@ const MainPage = () => {
               Applications that you should have when going to Singapore.
             </p>
           </a>
+          <a
+            href="/placeandapps/outfit"
+            className="group text-2xl rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            <h2 className={`mb-3 font-semibold`}>Outfits</h2>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              outfit all three days.
+            </p>
+          </a>
         </div>
       </section>
     </main>
