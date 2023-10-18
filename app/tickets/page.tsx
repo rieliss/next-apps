@@ -15,66 +15,6 @@ import {
 } from "@radix-ui/react-icons";
 
 const TicketsPage = () => {
-  const DownTick1 = () => {
-    // using Java Script method to get PDF file
-    fetch("2.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "2.pdf";
-        alink.click();
-      });
-    });
-  };
-  const DownTick2 = () => {
-    // using Java Script method to get PDF file
-    fetch("1.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "1.pdf";
-        alink.click();
-      });
-    });
-  };
-  const DownTick3 = () => {
-    // using Java Script method to get PDF file
-    fetch("3.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "3.pdf";
-        alink.click();
-      });
-    });
-  };
-  const DownTick4 = () => {
-    // using Java Script method to get PDF file
-    fetch("4.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "4.pdf";
-        alink.click();
-      });
-    });
-  };
   return (
     <main className="p-4">
       <Nav />
@@ -98,8 +38,7 @@ const TicketsPage = () => {
           </a>
 
           <a
-            onClick={DownTick2}
-            href="/tickets"
+            href="/1.pdf"
             className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_self"
             rel="noopener noreferrer"
@@ -116,8 +55,7 @@ const TicketsPage = () => {
           </a>
 
           <a
-            onClick={DownTick3}
-            href="/tickets"
+            href="/3.pdf"
             className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_self"
             rel="noopener noreferrer"
@@ -129,8 +67,7 @@ const TicketsPage = () => {
             </p>
           </a>
           <a
-            onClick={DownTick4}
-            href="/tickets"
+            href="/4.pdf"
             className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_self"
             rel="noopener noreferrer"
