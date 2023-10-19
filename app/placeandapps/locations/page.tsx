@@ -1,7 +1,6 @@
 "use client";
 import Nav from "@/components/Nav";
 import PlacePage from "@/components/place";
-import { ComboboxDemo } from "@/components/select-location";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -15,12 +14,6 @@ const LocationPage = () => {
           <ComboboxDemo />
         </div> */}
         <div className="grid text-center grid-cols-2 gap-8 lg:max-w-4xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-          <PlacePage
-            Name="Universal Studios Singapore"
-            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
-            Img="/univer.jpg"
-            Description="Universal Studios Singapore is Southeast Asia’s first and only Universal Studios theme park."
-          />
           <PlacePage
             Name="7 Wonders Hostel @ Upper Dickson"
             Link="https://maps.app.goo.gl/PRFVf3C8RYvkFtAt6"
@@ -79,7 +72,38 @@ const LocationPage = () => {
             Name="Tong Ah Eating House"
             Link="https://maps.app.goo.gl/97bQQzsYG2Jfd2bGA"
             Img="/tong-ah-eating-house-storefront.jpg"
-            Description="80-Year-Old Coffee Shop With Kaya French Toast At Keong Saik"
+            Description="80-Year-Old Coffee Shop With Kaya French Toast At Keong Saik."
+          />
+          <PlacePage
+            Name="Potato Head"
+            Link="https://maps.app.goo.gl/Ef943EhfX9bDpNbx8"
+            Img="/potato-head-singapore-building-exterior-2020+1.jpg"
+            Description="36 Keong Saik Road, Chinatown
+            Singapore 089143."
+          />
+          <PlacePage
+            Name="Vivo City"
+            Link="https://maps.app.goo.gl/uReNhya4oTgKGx3C9"
+            Img="/DPA_VivoCity_Carousel4_20180703120523.jpg"
+            Description="Enjoy complimentary WiFi in-mall as you shop at VivoCity."
+          />
+          <PlacePage
+            Name="Universal Studios Singapore"
+            Link="https://maps.app.goo.gl/8sFXimWMXu76TWhB6"
+            Img="/univer.jpg"
+            Description="Universal Studios Singapore is Southeast Asia's first and only Universal Studios theme park."
+          />
+          <PlacePage
+            Name="Sentosa"
+            Link="https://maps.app.goo.gl/pqWvsLQtW1SJzzNW6"
+            Img="/sentosa-island_carousel1_1670x940.jpg"
+            Description=" a sunny island in Singapore."
+          />
+          <PlacePage
+            Name="Henderson Waves bridge"
+            Link="https://maps.app.goo.gl/d2dQNCmGo5bhqDMW6"
+            Img="/20180428-074507-largejpg.jpg"
+            Description="the highest pedestrian bridge in Singapore."
           />
           <PlacePage
             Name="Sri Veeramakaliamman Temple"
@@ -87,6 +111,7 @@ const LocationPage = () => {
             Img="/98-veeramakaliamman-temple-3.jpg"
             Description="วัดฮินดูที่เก่าแก่ที่สุดแห่งหนึ่งของสิงคโปร์"
           />
+
           <PlacePage
             Name="Swee Choon"
             Link="https://maps.app.goo.gl/GEPR8R7iKT33sBDQ8"

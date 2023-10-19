@@ -78,6 +78,52 @@ const TicketsPage = () => {
               Hostel Booking Confirmation.
             </p>
           </a>
+          <a
+            href="/5.pdf"
+            className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            <StarIcon />
+            <h2 className={`mb-3 font-semibold`}>SG Arrival Card</h2>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              DE Number:Y0846L0214 - Ramida
+            </p>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              DE Number:Y0846L0312 - Khessarin
+            </p>
+          </a>
+          <a
+            href="/7.pdf"
+            className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            <HeartIcon />
+            <h2 className={`mb-3 font-semibold`}>SG Arrival Card th.ver</h2>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              DE Number:Y0846L0214 - Ramida
+            </p>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              DE Number:Y0846L0312 - Khessarin
+            </p>
+          </a>
+          <a
+            href="/6.pdf"
+            className="group rounded-lg border border-transparent px-5 py-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            <FaceIcon />
+            <h2 className={`mb-3 font-semibold`}>Sim Card Booking</h2>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              M1 4G SIM/eSIM (SG Airport OR City Pick Up) for Singapore
+            </p>
+            <p className={`m-0 max-w-[30ch] text-xs opacity-50`}>
+              Singapore · Changi Airport · 15 days · 100 GB · Calls included
+              (E-SIM)
+            </p>
+          </a>
         </div>
       </section>
     </main>
