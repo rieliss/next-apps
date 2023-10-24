@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import MenuBar from "@/components/menu";
-import { Button } from "@/components/ui/button";
 import { RocketIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="p-6">
       <Nav />
-      <section className="py-8 flex flex-col items-center text-center gap-ภ">
+      <section className="py-8 flex flex-col items-center text-center gap-4">
         <h1 className="text-2xl font-bold">
           <RocketIcon />
           Singapore Travel Guide
